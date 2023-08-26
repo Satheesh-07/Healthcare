@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthcare</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--------header section---------->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat">&nbsp;</i>Healthcare</a>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Expert">Expert's Forum</a>
+            <a href="#Firstaid">First Aid Guide</a>
+            <a href="vaccine.php">vaccination Schedule</a>
+            <a href="#Home">Chat with others</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <!-------------header section ends----------->
+    <!------home section------------------------->
+    <scetion class="home" id="Home">
+        <div class="image">
+            <img src="photos/Online Doctor-bro.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Stay Safe, stay healthy</h3>
+            <p>Welcome to Medcare</p>
+            <a href="#" class="btn">Contact us<span class="fas fa-chevron-right"></span></a>
+        </div>
+    </scetion>
+    <!--------------home section ends------------------------>
+    <!--------------------------icons section starts--------->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-user-md"></i>
+            <h3>140+</h3>
+            <p>Doctors at work</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <h3>1040+</h3>
+            <p>Satisfied patients</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-procedures"></i>
+            <h3>500+</h3>
+            <p>Bed Facility</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-hospital"></i>
+            <h3>80+</h3>
+            <p>Available Hospitals</p>
+        </div>
+    </section>
+    <!------------------------icons section ends--------------->
+    <!------------------------Expert's Forum section starts----->
+    <section class="expert" id="Expert">
+        <div class="image">
+            <img src="photos/Experts_forum.png" alt="Expert">
+        </div>
+        <div class="content">
+            <h3>Expert's Forum</h3>
+            <p>This will help you to chat with EXPERT DOCTORS to solve your queries about your problems</p>
+            <a href="expert.html" class="btn">Patient<span class="fas fa-chevron-right"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="expert.html" class="btn">Doctor<span class="fas fa-chevron-right"></span></a>
+        </div>
+    </section>
+    <!-------------------------Expert's Forum section ends----------->
+    <!-------------------------First Aid Video section starts------->
+    <section class="firstaid" id="Firstaid">
+        <h1>FIRST AID VIDEO SECTION</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="photos/health.avif" alt="" width="100%">
+                    <img src="photos/play.png" class="play-btn" onclick="playVideo('media/Healthcare.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="photos/heartcare.avif">
+                    <img src="photos/play.png" class="play-btn" onclick="playVideo('media/heartcare.mp4')">
+                    </div>
+                    <p>How to take care of <br>Heart problems</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="photos/skincare.avif">
+                    <img src="photos/play.png" class="play-btn" onclick="playVideo('media/skincare.mp4')">
+                    </div>
+                    <p>How to take care of <br>Skin problems</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="photos/mentalcare.avif">
+                    <img src="photos/play.png" class="play-btn" onclick="playVideo('media/mentalcare.mp4')">
+                    </div>
+                    <p>How to take care of <br>Mental problems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="media/Healthcare.mp4" type="video/mp4">
+        </video>
+        <img src="photos/close.png" class="close-btn" onclick="stopVideo();pauseVid()">
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------custom JS file link------->
+<script src="script.js"></script>
+
+</body>
+</html>
